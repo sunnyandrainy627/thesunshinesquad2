@@ -1,0 +1,345 @@
+<head>
+  {% extends "base.html" %}
+  {% block title %}Join Us{% endblock %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  {% block content %}
+
+  </style>
+  <!-- ===== LAS Conference ===== -->
+  <div class="section-wrapper">
+    <div class="conference-section">
+      <div class="conference-text">
+        <h2>Legal Assistance For Seniors' 20th Conference on Elder Abuse</h2>
+        <p>  
+         Our founder, Anisa Chandra, recently attended Legal Assistance for Seniors’ 20th Conference on Elder Abuse as a representative of The Sunshine Squad! As The Sunshine Squad branches out from nursing home crafts into elder abuse advocacy, attending this conference was an incredible opportunity to network with professionals in the field. We’re so thankful for this opportunity! 
+        </p>
+        <div class="linktree-button">
+        <a href="https://www.instagram.com/p/DY2bngAS4q2/"> FIND OUT MORE HERE!</a>
+        </div>
+      </div>
+    <img src="{{ url_for('static', filename='images/conf.jpeg') }}" class="about3-img">
+  </div>
+
+<!-- ===== What's next? ===== -->
+  <div class="game-bg" id="gamesection">
+    <div class="game-section">
+        <div class="game-text">
+          <h2> What's next?  </h2>
+          <p> Currently, we're working on fighting budget cuts that have been done towards nonprofit groups fighting against elder abuse. Most of these funding cuts have come as a result of the current government adminstration, and as a result, advocacy in this department is more difficult and necessary than ever. If you're interested, consider writing a letter to your legislators, hosting a small presentation about this topic to friends and family, or reaching out to a nonprofit group! All three of these methods are great, safe ways to stand up for older adults right now. </p>
+      </div>
+    </div>
+</div>
+
+<!-- ===== Elder Abuse Game "Night" ===== -->
+  <div class="section-wrapper">
+    <div class="night-section">
+      <img src="{{ url_for('static', filename='images/bingo.jpeg') }}" class="about4-img">
+      <div class="night-text">
+        <h2>Elder Abuse Game "Night"</h2>
+        <p> The Sunshine Squad had the honor of partnering with the CEJC (California Elder Justice Coalition) in celebration of Elder Abuse Awareness Day on June 15th! We did so by hosting an elder-abuse-themed game "night", at which residents at Plum Tree Nursing Home were educated about their rights through fun games. We loved this experience, and thought it was an incredible way to make education about the dangers of elder abuse interesting and fun! </p>
+    </div>
+  </div>
+
+  <!-- ===== Footer Section ===== -->
+      <div class="footer-bar">
+        <div class="footer-left" style="align-self: flex-end;">
+        </div>
+
+        <div class="footer-right-centered">
+          <h3 style="font-size: 1.5rem; font-weight: 600;">Interested in starting a chapter of The Sunshine Squad near you?</h3>
+          <p style="font-size: 1.1rem;">Contact us at:</p>
+          <p style="font-size: 1.1rem;">sunshinesquadco@gmail.com</p>
+          <p style="font-size: 1.1rem;">
+            <a href="https://www.instagram.com/pulseforjustice_official/" target="_blank" style="color: white; text-decoration: none;">
+              <i class="fa fa-instagram" style="font-size: 1.3rem; position: relative; top: 2px; left: 4px;"></i> @sunshinesquadco
+          <p style="font-size: 1.1rem;"><br>The Sunshine Squad is a registered 501(c)(3) organization.</p>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+</style>
+
+<style>
+  /* ===== Conference ===== */
+  .conference-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 50px;
+    padding-top: 100px !important;
+  }
+
+  .about2-img{
+    flex-shrink: 0;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 0; /* square borders */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-top: 80px;
+    margin-right: 40px;
+  }
+
+  .conference-text {
+    flex-grow: 1;
+    color: #000;
+    padding-top: 40px;
+  }
+
+  .conference-text h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #5b82b6;
+    margin-bottom: 1rem;
+  }
+
+  .conference-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: normal;
+    padding-bottom: 30px;
+  }
+
+  .conference-text h1 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: normal;
+    font-weight: 800;
+    color: #5b82b6;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  .linktree-button a {
+    padding: 1rem 1.5rem;
+    background-color: #5b82b6;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    max-width: 150px;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  /* ===== Advocacy Section ===== */
+  .game-bg {
+    background-color: #5b82b6;
+    color: white;
+    display: flex;              /* ✅ correct */
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 250px;
+    margin-top: 50px;
+    border: none;
+  }
+
+
+  .game-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    padding: 3rem 0;
+    margin-top: 10px;
+  }
+
+  .about3-img{
+    flex-shrink: 0;
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 0; /* square borders */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .game-text {
+    flex-grow: 1;
+    color: #ffffff;
+  }
+
+  .game-text h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+
+  .game-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: normal;
+  }
+
+  /* ===== Speech Classes ===== */
+  .night-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 40px !important;
+    padding: 3rem 0;
+  }
+
+  .about4-img{
+    flex-shrink: 0;
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 0; /* square borders */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+
+  .night-text {
+    flex-grow: 1;
+    color: #000;
+    padding-top: 40px;
+    padding-right: 50px;
+  }
+
+  .night-text h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #5b82b6;
+    margin-bottom: 1rem;
+  }
+
+  .night-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: normal;
+  }
+
+    /* ===== Footer Bar ===== */
+  .footer-bar {
+    height: auto !important;
+    background-color: #5b82b6;
+    color: white;
+    padding: 3rem 5vw 2rem 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    min-height: 250px;
+    position: relative;
+  }
+
+  .footer-left button {
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    padding: 0.9rem 1.4rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5rem;
+    margin-left: 1vw;
+  }
+
+  .footer-left button:hover {
+    background-color: #d5d5d5;
+  }
+
+  .footer-right-centered {
+    flex-grow: 1;
+    margin-left: 5vw; /* slight left shift for centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-right-centered h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-right-centered p {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+  }
+
+  .footer-right-centered i {
+    margin-right: 6px;
+  }
+
+  @media (max-width: 768px) {
+
+  /* ===== ALL FLEX SECTIONS STACK ===== */
+  .ourclasses-section,
+  .advocacy-section,
+  .speech-section,
+  .speechanddebate-section,
+  .debate-section {
+    flex-direction: column;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    text-align: center;
+  }
+
+  /* ===== ALL IMAGES SCALE ===== */
+  .about2-img,
+  .about3-img,
+  .about4-img,
+  .about7-img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  /* ===== TEXT FIXES ===== */
+  .ourclasses-text h2,
+  .advocacy-text h2,
+  .speech-text h2,
+  .speechanddebate-text h2,
+  .debate-text h2 {
+    font-size: 2.4rem;
+  }
+
+  .ourclasses-text p,
+  .advocacy-text p,
+  .speech-text p,
+  .speechanddebate-text p,
+  .debate-text p {
+    font-size: 1rem;
+  }
+
+  /* ===== BUTTON FIX ===== */
+  .linktree-button a {
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+
+  /* ===== FOOTER FIX ===== */
+  .footer-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right-centered {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+</style>
+
+  {% endblock %}
+</body>
+</html>

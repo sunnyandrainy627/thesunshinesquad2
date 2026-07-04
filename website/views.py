@@ -207,7 +207,11 @@ def aboutus():
 def joinus():
     return render_template('joinus.html')
 
+@views.route('/advocacy')
+def advocacy():
+    return render_template('advocacy.html')
+
 @views.route('/newsletter')
 def newsletter():
-    issues = ["issue13.png","issue12.png","issue11.png","issue10.png","issue9.png", "issue8.png", "issue7.png", "issue6.png", "issue5.png", "issue4.png", "issue3.png", "issue2.jpg", "issue1.png", "issue0.png"]
+    issues = ["issue16.png","issue15.png","issue14.png","issue13.png","issue12.png","issue11.png","issue10.png","issue9.png", "issue8.png", "issue7.png", "issue6.png", "issue5.png", "issue4.png", "issue3.png", "issue2.jpg", "issue1.png", "issue0.png"]
     return render_template('newsletter.html', issues=issues)
