@@ -78,8 +78,8 @@ nav.navbar {
 .founders-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 4rem 6vw;
+  align-items: center !important;
+  padding: 4rem 4vw;
   opacity: 0;
   transition: opacity 1.4s ease-out;
   flex-wrap: wrap; 
@@ -90,10 +90,12 @@ nav.navbar {
 }
 
 .founder-images {
+  margin-left:80px;
   display: flex;
   gap: 2.5rem;
   justify-content: center;
   flex-wrap: wrap; 
+  align-items: center;
 }
 
 .founder {
@@ -333,6 +335,16 @@ nav.navbar {
         <img src="{{ url_for('static', filename='images/anusha.jpeg') }}" alt="Anusha Mukhopadhyay" />
         <div class="name">Anusha Mukhopadhyay</div>
         <div class="role">Vice President</div>
+      </div>
+      <div class="founder">
+        <img src="{{ url_for('static', filename='images/maya.jpg') }}" alt="Maya Chandra" />
+        <div class="name">Maya Chandra</div>
+        <div class="role">Outreach Lead</div>
+      </div>
+      <div class="founder">
+        <img src="{{ url_for('static', filename='images/kimmy.png') }}" alt="Kimberly Ha" />
+        <div class="name">Kimberly Ha</div>
+        <div class="role">Communications Lead</div>
       </div>
     </div>
   </div>
