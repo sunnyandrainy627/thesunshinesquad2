@@ -213,5 +213,5 @@ def advocacy():
 
 @views.route('/newsletter')
 def newsletter():
-    issues = ["issue16.png","issue15.png","issue14.png","issue13.png","issue12.png","issue11.png","issue10.png","issue9.png", "issue8.png", "issue7.png", "issue6.png", "issue5.png", "issue4.png", "issue3.png", "issue2.jpg", "issue1.png", "issue0.png"]
+    issues = ["issue27.png","issue26.png","issue25.png","issue24.png","issue23.png","issue22.png","issue21.png","issue20.png","issue19.png","issue18.png","issue17.png","issue16.png","issue16.png","issue15.png","issue14.png","issue13.png","issue12.png","issue11.png","issue10.png","issue9.png", "issue8.png", "issue7.png", "issue6.png", "issue5.png", "issue4.png", "issue3.png", "issue2.jpg", "issue1.png", "issue0.png"]
     return render_template('newsletter.html', issues=issues)
