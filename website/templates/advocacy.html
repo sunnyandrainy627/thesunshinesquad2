@@ -26,15 +26,17 @@
     <img src="{{ url_for('static', filename='images/conf.jpeg') }}" class="about3-img">
   </div>
 
-<!-- ===== What's next? ===== -->
+<!-- ===== SMP ===== -->
   <div class="game-bg" id="gamesection">
     <div class="game-section">
         <div class="game-text">
-          <h2> What's next?  </h2>
-          <p> Currently, we're working on fighting budget cuts that have been done towards nonprofit groups fighting against elder abuse. Most of these funding cuts have come as a result of the current government adminstration, and as a result, advocacy in this department is more difficult and necessary than ever. If you're interested, consider writing a letter to your legislators, hosting a small presentation about this topic to friends and family, or reaching out to a nonprofit group! All three of these methods are great, safe ways to stand up for older adults right now. </p>
+          <h2> California SMP Partnership  </h2>
+          <p> Over the course of the 2026-27 school year, The Sunshine Squad has been working in partnership with California Senior Medicare Patrol: a nonprofit dedicated to ensuring that seniors are informed about Medicare and what it can offer them. By working with this incredible organization, we work to increase financial literacy among older adults: one of the main causes of elder abuse.  </p>
       </div>
     </div>
 </div>
+
+
 
 <!-- ===== Elder Abuse Game "Night" ===== -->
   <div class="section-wrapper">
@@ -43,6 +45,28 @@
       <div class="night-text">
         <h2>Elder Abuse Game "Night"</h2>
         <p> The Sunshine Squad had the honor of partnering with the CEJC (California Elder Justice Coalition) in celebration of Elder Abuse Awareness Day on June 15th! We did so by hosting an elder-abuse-themed game "night", at which residents at Plum Tree Nursing Home were educated about their rights through fun games. We loved this experience, and thought it was an incredible way to make education about the dangers of elder abuse interesting and fun! </p>
+    </div>
+  </div>
+
+<!-- ===== SMP ===== -->
+  <div class="game-bg" id="gamesection">
+    <div class="game-section">
+        <div class="game-text">
+          <h2> Praxis Project </h2>
+          <p> Anisa Chandra and Anusha Mukhopadhyay are both students at Notre Dame High School San Jose: a school that prides itself on turning ordinary students into justice advocates in regard to different issues in their communities. One way students are able to show their passion for the issues they care about is through the Praxis Project, a project in one's junior year in which students have to make a website analyzing a social justice issue that matters to them. Both Anisa and Anusha chose to do theirs on different aspects of elder abuse: Anisa focused on elder abuse in nursing homes, while Anusha focused on elder abuse in hospitals. As a whole though, both students successfuly raised awareness for these issues by presenting their websites to their peers; this demonstrates The Sunshine Squad's continual commitment to advocacy and justice.  </p>
+      </div>
+    </div>
+</div>
+
+<!-- ===== Letter Writing ===== -->
+  <div class="section-wrapper">
+    <div class="letter-section">
+      <div class="letter-text">
+        <h2>Writing to Senators</h2>
+        <p>  
+         Earlier this year, one of The Sunshine Squad's community partners (CEJC) was forced to terminate their work with The Sunshine Squad: not from a lack of interest or passion, but instead from a lack of funding towards elder abuse awareness. Thankfully, the CEJC wasn't looking to give up easily: instead of passively allowing our contract to terminate, they sent The Sunshine Squad letter-writing templates, encouraging us to write to senators and get further involved within our communities. The Sunshine Squad's Vice President, Anusha Mukhopadhyay, even recieved a response from the Congressmember she wrote to; this demonstrates The Sunshine Squad's willingness to stand up against injustice and advocate for those who can't. </p>
+      </div>
+      <img src="{{ url_for('static', filename='images/letter.png') }}" class="letter1-img">
     </div>
   </div>
 
@@ -128,6 +152,57 @@
     max-width: 150px;
     justify-content: center;
     margin-bottom: 0px;
+  }
+
+  /* ===== Letter ===== */
+  .letter-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 50px;
+    padding-top: 20px !important;
+  }
+
+  .letter-text {
+    flex-grow: 1;
+    color: #000;
+    padding-top: 40px;
+  }
+
+  .letter-text h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #5b82b6;
+    margin-bottom: 1rem;
+  }
+
+  .letter-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: normal;
+    padding-bottom: 30px;
+  }
+
+  .letter-text h1 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: normal;
+    font-weight: 800;
+    color: #5b82b6;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  .letter1-img{
+    flex-shrink: 0;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 0; /* square borders */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-top: 80px;
+    margin-right: 40px;
   }
 
   /* ===== Advocacy Section ===== */
